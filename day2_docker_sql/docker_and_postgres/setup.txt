@@ -1,0 +1,8 @@
+docker run -it \
+     -e POSTGRES_USER="root" \
+     -e POSTGRES_PASSWORD="root" \
+     -e POSTGRES_DB="ny_taxi" \
+     -v d:/becometodataengineer/day2_docker_sql/docker_and_postgres/ny_taxi_postgres_data:/var/lib/postgresql/data \
+     -p 5432:5432 \
+     --name pg13 \
+     postgres:13
